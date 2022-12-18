@@ -69,3 +69,23 @@ button:hover{
     color:white;
 
 }
+@media screen and (orientation: portrait) {
+    body{
+        margin:2vmax;
+    }
+    section{
+        flex-direction:column;
+        margin:0vmax;
+        margin-bottom:15vmax;
+    }
+    img{
+        width:70vw;
+    }
+    button {
+      font-size: 3vmax;
+      background: black;
+      color: white;
+      padding:2vmax;
+    }
+  }
+  

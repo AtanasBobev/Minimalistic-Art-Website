@@ -85,3 +85,20 @@ a:hover {
   color: white;
   cursor: pointer;
 }
+
+@media screen and (orientation: portrait) {
+  h1{
+    font-size: 5vmax;
+  }
+  #naviationBar {
+    width: 100vw;
+    left: 0;
+    bottom: 5vmax;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-size: 3vmax;
+  }
+}
