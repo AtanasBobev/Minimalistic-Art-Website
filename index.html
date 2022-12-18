@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Art Agency</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/css/indexStyles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.19.0/core.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/fadeIn.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+  </head>
+  <body>
+    <nav id="naviationBar">
+      <li><a class="animate fadeIn three" href="about.html">About us</a></li>
+      <li>
+        <a class="animate fadeIn three" href="ourProjects.html">Our projects</a>
+      </li>
+      <li><a class="animate fadeIn three" href="contact.html">Contact</a></li>
+    </nav>
+    <section id="particle">
+      <div class="animate fadeIn one" id="particleAnimation"></div>
+      <h1 class="animate fadeIn two">Art Agency</h1>
+    </section>
+    <script src="./assets/js/particles.js"></script>
+    <script>
+      new kursor({
+            type: 3
+        })
+
+      particlesJS.load(
+        "particleAnimation",
+        "assets/particles.json",
+        function () {
+          console.log("callback - particles.js config loaded");
+        }
+      );
+
+      var app = document.querySelector("#particle h1");
+
+      var typewriter = new Typewriter(app, {
+        loop: true,
+      });
+
+      typewriter
+        .typeString("Artistic Visions")
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString("We are the future")
+        .pauseFor(2500)
+        .deleteAll()
+        .start();
+    </script>
+  </body>
+</html>
