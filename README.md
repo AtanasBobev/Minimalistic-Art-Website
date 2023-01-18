@@ -1,6 +1,7 @@
-# SimpleArtAgencyWebsite
+# Minimalistic Art Website
 This repository contains the code for a minimalistic art agency website, featuring an animated index page with particles.js and a typewriter effect. The website also includes an 'About Us' page, a 'Projects' page, and a 'Contact' page, all with minimalistic design and fade-in effects. The website is designed to showcase the art agency's portfolio and provide information about their services.
 The idea behind the development is to use mostly vanialla technologieis rather than relying on frameworks and their libraries for stylization purposes.
+*The project has been created for a school project in a few hours.*
 ## Technologies
 - HTML
 - CSS
