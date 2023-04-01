@@ -63,9 +63,8 @@
         .start()
 
       let counter = 0
-      $(document).keypress(function (e) {
-        var key = e.which
-        if (key == 32 && !counter) {
+      $(document).keypress(e => {
+        if (e.which == 32 && !counter) {
           counter++
           $('h1.animate').hide()
           particlesJS.load('particleAnimation', './assets/altConfig.json')
