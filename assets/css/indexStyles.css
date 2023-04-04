@@ -79,13 +79,13 @@ a {
   padding: 0.5vmax;
   border: 1px solid transparent;
 }
-a:hover {
+
+.buttonHover:hover{
   border: 1px solid white;
-  background-color: black;
-  color: white;
+  background-color: black !important;
+  color: white !important;
   cursor: pointer;
 }
-
 #nyanCat{
   position: absolute;
   top: 50%;
