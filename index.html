@@ -100,9 +100,9 @@
           $("#naviationBar li a").css("border-radius", "10px");
           audio.play();
           Toastify({
-            text: "Press space to return to menu",
-            gravity:"bottom",
-            duration: 3000,
+            text: "Press space to for the previous design",
+            gravity: "top",
+            duration: 4000,
           }).showToast();
         } else {
           counter = false;
@@ -117,6 +117,11 @@
           $("#naviationBar li a").css("border-radius", "0px");
           new Audio("./assets/nyanCat.mp3").pause();
           audio.pause();
+          Toastify({
+            text: "Welcome back!",
+            gravity: "top",
+            duration: 4000,
+          }).showToast();
         }
       });
     </script>
